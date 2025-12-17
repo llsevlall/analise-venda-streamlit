@@ -135,7 +135,7 @@ else:
             st.sidebar.header(f"Tipo de pagamento que mais vendeu: "
                               f"{df_filtrado_data['forma_pagamento'].value_counts().head(1).index[0]}")
 
-    st.title('Dashbords das Vendas')
+    st.title('Dashboards das Vendas')
 
     formas_pagamento = df_compras['forma_pagamento'].value_counts().reset_index()
 
