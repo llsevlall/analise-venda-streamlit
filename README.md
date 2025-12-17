@@ -15,7 +15,7 @@ utilizei foram: matplotlib, pandas e streamlit</small>
 
 ------
 
-Se quiser ter uma interação com o aplicativo, é só acessar: 
+Se quiser ter uma interação com o aplicativo, é só acessar: https://sevlasevla.streamlit.app/
 
 
 ### Demonstração 
