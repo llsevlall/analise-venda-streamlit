@@ -3,7 +3,7 @@
 Projeto pessoal desenvolvido em Python com Streamlit para análise e visualização de dados de vendas.
 Um aplicativo cujo objetivo é filtrar, adicionar, excluir e análisar dados de vendas de uma empresa fictícia.
 
-## Funcionalidades 
+### Funcionalidades 
 
 - Filtros dinâmicos por loja, produto, vendedor e forma de pagamento
 - Tabela interativa de vendas 
