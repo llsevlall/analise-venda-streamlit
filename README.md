@@ -18,4 +18,4 @@ Se quiser ter uma interação com o aplicativo, é só acessar:
 
 ### Demonstração 
 
-<img src="assets/gif.gif" width="900">
+![Demonstração do Aplicativo](assets/gif.gif)
