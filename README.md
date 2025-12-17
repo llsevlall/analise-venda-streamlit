@@ -10,12 +10,14 @@ Um aplicativo cujo objetivo é filtrar, adicionar, excluir e análisar dados de 
 - Cadastro e exclusão de clientes 
 - Preparado para expansão com dashboards analíticos 
 
-O aplicativo continua tendo algumas atualizações, principalmente na parte dos dashboards. As bibliotecas externas que 
-utilizei foram: matplotlib, pandas e streamlit
+<small>O aplicativo continua tendo algumas atualizações, principalmente na parte dos dashboards. As bibliotecas externas que 
+utilizei foram: matplotlib, pandas e streamlit</small>
+
 ------
+
 Se quiser ter uma interação com o aplicativo, é só acessar: 
 
 
 ### Demonstração 
 
-![Demonstração do Aplicativo](assets/gif.gif)
+![Demonstração do Aplicativo](assets/demo.gif)
