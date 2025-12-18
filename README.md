@@ -11,13 +11,15 @@ Um site cujo objetivo é filtrar, adicionar, excluir e análisar dados de vendas
 - Preparado para expansão com dashboards analíticos 
 
 <small>O site continua tendo algumas atualizações, principalmente na parte dos dashboards. As bibliotecas externas que 
-utilizei foram: matplotlib, pandas e streamlit</small>
+utilizei foram: matplotlib, pandas e streamlit.</small>
 
 ------
 
 Se quiser ter uma interação com o site, é só acessar: https://sevlasevla.streamlit.app/
 
+É bem simples e interativo. 
+
 
 ### Demonstração 
 
-![Demonstração do Aplicativo](assets/demo.gif)
+![Demonstração do Aplicativo](assets/demo_analise.gif)
