@@ -2001,3 +2001,4 @@ data;id_compra;loja;vendedor;produto;cliente_nome;cliente_genero;forma_pagamento
 2025-12-15 20:24:29.120000;2001;Florianópolis;Rodrigo Dias;Smartphone Samsung Galaxy;Alice das Mães;feminino;dinheiro
 2025-12-15 20:27:11.120000;2002;Florianópolis;Gabriel Jesus;Smartphone Samsung Galaxy;Allanys Oliveira;feminino;dinheiro
 2025-12-15 20:32:16.120000;2004;Florianópolis;Juan Alves;Smartphone Samsung Galaxy;Rodrigo Silveira;feminino;dinheiro
+2025-12-18 21:30:36.12;2005;São Paulo;Juan Alves;Smartwatch Garmin;Maria Bezerra;feminino;cartão de crédito
