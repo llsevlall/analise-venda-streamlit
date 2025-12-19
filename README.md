@@ -22,4 +22,4 @@ Se quiser ter uma interação com o site, é só acessar: https://sevlasevla.str
 
 ### Demonstração 
 
-![Demonstração do Aplicativo](assets/demo_analise.gif)
+![Demonstração do Aplicativo](assets/demo_nova.gif)
