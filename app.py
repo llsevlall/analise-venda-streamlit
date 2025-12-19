@@ -3,7 +3,6 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 import plotly.express as px
-from IPython.core.pylabtools import figsize
 
 st.set_page_config(
     page_title="Vendas",
