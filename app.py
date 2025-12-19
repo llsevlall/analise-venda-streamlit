@@ -10,6 +10,18 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown(
+    """
+    <style>
+        section[data-testid="stSidebar"] {
+            min-width: 320px;
+            width: 320px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Análise das Vendas")
 
 caminho_arquivo = "./datasets/compras.csv"
