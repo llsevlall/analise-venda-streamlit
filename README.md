@@ -11,7 +11,7 @@ Um site cujo objetivo é filtrar, adicionar, excluir e análisar dados de vendas
 - Preparado para expansão com dashboards analíticos 
 
 <small>O site continua tendo algumas atualizações, principalmente na parte dos dashboards. As bibliotecas externas que 
-utilizei foram: matplotlib, pandas e streamlit.</small>
+utilizei foram: plotly, pandas e streamlit.</small>
 
 ------
 
