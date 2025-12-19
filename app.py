@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
+import plotly.express as px
+from IPython.core.pylabtools import figsize
 
 st.set_page_config(
     page_title="Vendas",
@@ -139,21 +141,35 @@ else:
 
     formas_pagamento = df_compras['forma_pagamento'].value_counts().reset_index()
 
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.bar(formas_pagamento['forma_pagamento'], formas_pagamento["count"])
-    ax.set_title("Formas de pagamento")
-    ax.set_xlabel("")
-    ax.set_ylabel("Número de vendas feitas")
+    fig = px.bar(
+        formas_pagamento,
+        x='forma_pagamento',
+        y='count',
+        labels={
+            'count': 'Quantidade de pagamentos',
+            'forma_pagamento': 'Forma de pagamentos'
+        },
+        hover_data={
+            'count': True
+        },
+        color='forma_pagamento',
+        color_discrete_sequence=['#616161', '#474747', '#ADADAD', '#000000']
+    )
 
-    st.pyplot(fig)
+
+
+    st.plotly_chart(fig)
+
     st.divider()
 
-    vendedores = df_compras['vendedor'].value_counts().reset_index().head(3)
+    df_genero_grafico = df_compras['cliente_genero'].value_counts().reset_index()
 
-    fig2, ax2 = plt.subplots(figsize=(10, 5))
-    ax2.barh(vendedores['vendedor'], vendedores['count'])
-    ax2.set_title("Top 3 vendedores")
-    ax2.set_xlabel("Número de vendas feitas")
+    fig = px.pie(
+        df_genero_grafico,
+        names='cliente_genero',
+        values='count',
+        title='Quantidade de compras por gênero',
+        color_discrete_sequence=['#616161', '#474747']
+    )
 
-    st.pyplot(fig2)
-    st.divider()
+    st.plotly_chart(fig)
