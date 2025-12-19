@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import matplotlib.pyplot as plt
-import plotly.express as px
+from dataframe import df_compras, caminho_arquivo
+from graficos import fig, fig2
 
 st.set_page_config(
     page_title="Vendas",
@@ -24,11 +24,7 @@ st.markdown(
 
 st.title("Análise das Vendas")
 
-caminho_arquivo = "./datasets/compras.csv"
 
-df_compras = pd.read_csv(caminho_arquivo, sep=";", decimal=",", index_col=0)
-
-df_compras.index = pd.to_datetime(df_compras.index)
 colunas = list(df_compras.columns)
 colunas_selecionadas = st.multiselect("Selecione as colunas:", colunas, colunas)
 st.sidebar.subheader("Selecione os dados de compra para filtrar")
@@ -149,38 +145,6 @@ else:
                               f"{df_filtrado_data['forma_pagamento'].value_counts().head(1).index[0]}")
 
     st.title('Dashboards das Vendas')
-
-    formas_pagamento = df_compras['forma_pagamento'].value_counts().reset_index()
-
-    fig = px.bar(
-        formas_pagamento,
-        x='forma_pagamento',
-        y='count',
-        labels={
-            'count': 'Quantidade de pagamentos',
-            'forma_pagamento': 'Forma de pagamentos'
-        },
-        hover_data={
-            'count': True
-        },
-        color='forma_pagamento',
-        color_discrete_sequence=['#616161', '#474747', '#ADADAD', '#000000']
-    )
-
-
-
     st.plotly_chart(fig)
-
     st.divider()
-
-    df_genero_grafico = df_compras['cliente_genero'].value_counts().reset_index()
-
-    fig = px.pie(
-        df_genero_grafico,
-        names='cliente_genero',
-        values='count',
-        title='Quantidade de compras por gênero',
-        color_discrete_sequence=['#616161', '#474747']
-    )
-
-    st.plotly_chart(fig)
+    st.plotly_chart(fig2)
