@@ -17,9 +17,9 @@ utilizei foram: matplotlib, pandas e streamlit.</small>
 
 Se quiser ter uma interação com o site, é só acessar: https://sevlasevla.streamlit.app/
 
-É bem simples e interativo. 
+É bem simples e interativo.
 
 
 ### Demonstração 
 
-![Demonstração do Aplicativo](assets/demo_att.gif)
+![Demonstração do Aplicativo](assets/demo.gif)
