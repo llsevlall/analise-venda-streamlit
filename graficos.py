@@ -13,7 +13,7 @@ fig = px.bar(
             'count': True
         },
         color='forma_pagamento',
-        color_discrete_sequence=['#616161', '#474747', '#ADADAD', '#000000']
+        color_discrete_sequence=['#00747C', '#00BBC9', '#CACACA', '#202022']
     )
 
 
@@ -22,5 +22,5 @@ fig2 = px.pie(
         names='cliente_genero',
         values='count',
         title='Quantidade de compras por gênero',
-        color_discrete_sequence=['#616161', '#474747']
+        color_discrete_sequence=['#121412', '#D4D4D4']
     )
