@@ -70,7 +70,7 @@ else:
     genero = col3.selectbox('Qual o gênero do comprador?', df_compras['cliente_genero'].unique())
     pagamento = col4.selectbox('Qual foi a forma de pagamento?', df_compras['forma_pagamento'].unique())
 
-    adicionar = st.sidebar.button('Adicionar coluna')
+    adicionar = st.sidebar.button('Adicionar linha')
 
     if adicionar:
         if not cliente or not vendedor:
